@@ -31,6 +31,8 @@ body::before {
   z-index: -1;
 }
 
+
+/* This is for slider-container */
 .slider-container {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   height: 70vh;
@@ -39,6 +41,7 @@ body::before {
   overflow: hidden;
 }
 
+/* This is for every slides in slider container */
 .slide {
   opacity: 0;
   height: 100vh;
@@ -56,6 +59,7 @@ body::before {
   opacity: 1;
 }
 
+/* This is for arrow buttons */
 .arrow {
   position: fixed;
   /* z-index: 100; */
