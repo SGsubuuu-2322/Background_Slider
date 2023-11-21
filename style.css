@@ -36,3 +36,44 @@ body::before {
   position: relative;
   overflow: hidden;
 }
+
+.slide {
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: -15vh;
+  left: -15vw;
+  z-index: 1;
+  transition: 0.4s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.arrow {
+  position: fixed;
+  /* z-index: 100; */
+  padding: 20px;
+  font-size: 30px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid orange;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow:focus {
+  outline: 0;
+}
+
+.left-arrow {
+  left: calc(15vw - 65px);
+}
+.right-arrow {
+  right: calc(15vw - 65px);
+}
