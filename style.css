@@ -1,9 +1,12 @@
+/* This is the styling file for this project written using CSS tech... */
+/* And these are some general stylings for this project... */
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
+/* This is for making body some overlay effect with black color  */
 body {
   font-family: "Young serif";
   display: flex;
