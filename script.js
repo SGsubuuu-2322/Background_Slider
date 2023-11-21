@@ -7,6 +7,7 @@ const rightBtn = document.getElementById("right");
 
 let activeSlides = 0;
 
+// This script code is for button event listening...
 rightBtn.addEventListener("click", () => {
   activeSlides++;
   if (activeSlides > slides.length - 1) {
@@ -26,10 +27,12 @@ leftBtn.addEventListener("click", () => {
 
 setBgToBody();
 
+// This is for setting body background image dynamically...
 function setBgToBody() {
   body.style.backgroundImage = slides[activeSlides].style.backgroundImage;
 }
 
+// This is for setting slide
 function setActiveSlides() {
   slides.forEach((slide) => slide.classList.remove("active"));
   slides[activeSlides].classList.add("active");
